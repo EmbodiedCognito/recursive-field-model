@@ -231,7 +231,7 @@ export class WorldAssemblyModel {
         this._schedule(this.tick + c.channelDelay, {
           dst: outChannel.dst,
           value: transmitted,
-          channel: index,
+          channel: channelIndex,
         });
       }
     }

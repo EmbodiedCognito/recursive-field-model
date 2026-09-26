@@ -193,7 +193,7 @@ export class WorldAssemblyModel {
     }
     for (const ch of this.channels) {
       ch.history *= c.historyRetention;
-      ch.gain = clamp(ch.baseGain * (1 + c.edgeAdaption * ch.history), 0.05, 3);
+      ch.gain = clamp(ch.baseGain * (1 + c.edgeAdaptation * ch.history), 0.05, 3);
       ch.lastFlux = 0;
     }
 
